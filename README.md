@@ -9,6 +9,16 @@ The project was built using the [Pydantic AI](https://ai.pydantic.dev/) framewor
 * [Theme Agent](agents/theme_agent.py): It's responsible for selecting a daily theme for the music recommendations. In order to improve the agent creativiness, we also pass a group of random categories to be used as inspiration for the theme selection.
 * [Curation Agent](agents/curation_agent.py): It's responsible for selecting a list of albums that have synergy with the daily theme. In order to improve the newsletter reader experience, we also enrich the selected album list with their respective Spotify links.
 
+## Prerequisites 📋
+
+To run this project, you will need to have the following environment variables set up:
+
+* `SPOTIFY_CLIENT_ID`: The client ID for your Spotify API application.
+* `SPOTIFY_CLIENT_SECRET`: The client secret for your Spotify API application.
+* `OPENAI_API_KEY`: The API key for your OpenAI account.
+
+Just take from `.env.example` file and create a `.env` file with your own credentials.
+
 ## Running It by Yourself 🚀
 
 To run this project on your local machine, you can follow these simple steps:
